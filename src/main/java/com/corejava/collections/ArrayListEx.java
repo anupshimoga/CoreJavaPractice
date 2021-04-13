@@ -2,7 +2,11 @@ package com.corejava.collections;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
+
+import org.w3c.dom.NameList;
 
 public class ArrayListEx {
 	public static void main(String[] args) {
@@ -32,5 +36,12 @@ public class ArrayListEx {
 		System.out.println(ar2);
 		System.out.println(ar2.removeIf(ele-> ele%3 == 0));
 		System.out.println(ar2);
+		
+		ArrayList<String> namesList = new ArrayList<String>(Arrays.asList("Anup", "Naveen", "Tom", "Tom", "Tom"));
+		namesList.retainAll(Collections.singleton("Tom"));
+		System.out.println(namesList);
+		
+		ArrayList<String> subList = new ArrayList<String>(namesList.subList(0, 2));
+		System.out.println(subList);
 	} 
 }
