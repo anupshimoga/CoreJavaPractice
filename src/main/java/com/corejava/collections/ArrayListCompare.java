@@ -19,7 +19,7 @@ public class ArrayListCompare {
 		nameList1.removeAll(nameList);
 		System.out.println(nameList1);
 		
-		//find out missing elelemnts
+		//find out missing elements
 		nameList.removeAll(nameList1);
 		System.out.println(nameList);
 		
