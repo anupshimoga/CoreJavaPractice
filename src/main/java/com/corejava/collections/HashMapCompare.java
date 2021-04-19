@@ -1,6 +1,7 @@
 package com.corejava.collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -63,5 +64,12 @@ public class HashMapCompare {
 		HashSet<String> newHashValue = new HashSet<String>(map4.values());
 		HashSet<String> newHashValue1 = new HashSet<String>(map5.values());
 		System.out.println(newHashValue.equals(newHashValue1));
-	}
+		
+		int[] i = {24,45,6,7};
+		for(int j = 0; j<i.length; j++) {
+		System.out.println(i[j]);
+		
+		ArrayList<Integer> arry1 = new ArrayList<Integer>(Arrays.asList(1));
+		}
+		}
 }
